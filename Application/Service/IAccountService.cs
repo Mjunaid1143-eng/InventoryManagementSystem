@@ -2,10 +2,11 @@
 using Application.DTO.Request.Identity;
 using Application.DTO.Response;
 using Application.DTO.Response.Identity;
+using Microsoft.Identity.Client;
 
 namespace Application.Service.Identity
 {
-    public interface IAccount
+    public interface IAccountService 
     {
         Task<ServiceResponse> LoginAsync(LoginUserRequestDTO model);
 

@@ -39,7 +39,7 @@ namespace Infrastructure.DependencyInjection
                     adp.RequireAuthenticatedUser();
                     adp.RequireRole("User");
                 });
-            services.AddScoped<Application.Interface.Identity.IAccount, Account>();
+            services.AddScoped<Application.Interface.Identity.IAccountService, Account>();
             return services;
         }
     }

@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 namespace Infrastructure.Repository
 {
     public class Account
-       (UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager) : IAccount
+       (UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager) : IAccountService
     {
         public async Task<ServiceResponse> CreateUserAsync(CreateUserRequestDTO model)
         {
