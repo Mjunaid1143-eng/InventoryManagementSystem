@@ -4,7 +4,7 @@ using Application.DTO.Response;
 using Application.DTO.Response.Identity;
 using Microsoft.Identity.Client;
 
-namespace Application.Service.Identity
+namespace Application.Interface.Identity
 {
     public interface IAccountService 
     {

@@ -2,6 +2,7 @@
 using Application.DTO.Request.Identity;
 using Application.DTO.Response;
 using Application.DTO.Response.Identity;
+using Application.Interface.Identity;
 using Microsoft.Identity.Client;
 using Microsoft.VisualStudio.Services.Account;
 

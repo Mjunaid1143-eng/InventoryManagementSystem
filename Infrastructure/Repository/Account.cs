@@ -3,19 +3,15 @@ using Application.DTO.Response;
 using Application.DTO.Response.Identity;
 using Application.Extension.Identity;
 using Application.Interface.Identity;
-using Infrastructure.DataAccess;
+using Application.Service.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Infrastructure.Repository
 {
-    public class Account
+    public class Account 
        (UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager) : IAccountService
     {
         public async Task<ServiceResponse> CreateUserAsync(CreateUserRequestDTO model)
